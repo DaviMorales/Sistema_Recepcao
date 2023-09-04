@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
     <title>Menu</title>
 
     <link rel="stylesheet" href="../css/reset.css">
@@ -11,10 +12,9 @@
 </head>
 <body>
     
-
     <header>
         <div class="box">
-            <h1><img src="../../../assets/img/logo-gdf.png" alt="Logo do GDF"></h1>
+            <h1><img src="../../../assets/img/logo-gdf-300.png" alt="Logo do GDF"></h1>
 
             <nav>
                 <a href=""><img id="logo-usuario" src="../../../assets/img/usuario.png" alt="Minha Conta"></a>
@@ -23,7 +23,29 @@
     </header>
 
     <main>
-        <div></div>
+        <div class="box">
+            
+            <form action="">
+                <div>
+                    <h1>CPF, CNPJ, OAB:
+                        <input type="text" name="identificacao" placeholder="Insira aqui o CPF, CNPJ ou OAB" 
+                        pattern="([0-9]{3}[\-]?[0-9]{3}[\-]?[0-9]{3}[\.]?[0-9]{2}) | ([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2}) | ([A-Z]{2}[0-9]{6}) | ([0-9])" required> 
+                    </h1>
+                </div>
+                <div>
+                    <label for="nome">
+                        Nome:
+                        <input type="text" id="nome" name="nome" placeholder="Digite o nome completo" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="motivo">
+                        Motivo:
+                        <textarea name="motivo" id="motivo" cols="30" rows="10" placeholder="Digite o motivo da visita aqui"></textarea>
+                    </label>
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer>

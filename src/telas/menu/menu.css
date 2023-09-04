@@ -1,10 +1,21 @@
+/* html, body e body: parte de colocar o footer colado embaixo da página */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* cabeçalho */
 header {
     background-color: rgb(26, 139, 26); 
     padding: 10px;
     min-height: 50px;
-   
 }
 
+/* Logo do cabeçalho */
 .box img {
     max-width: 80px;
     max-height: 80px;
@@ -13,6 +24,7 @@ header {
     margin-left: 20px;
 }
 
+/* Posição do símbolo de usuário */
 nav {
     position: absolute;
     top: 31px;
@@ -26,8 +38,14 @@ nav {
     height: auto;
 }
 
+/* Parte de colocar o footer colado com a página */
+main {
+    flex: 1 0 auto;
+}
+
 footer {
-    background: no-repeat center / cover url("../../../assets/img/bg.jpg");
+    background: no-repeat center / cover url("../../../assets/img/bg-1200.jpg");
     padding: 130px;
     text-align: center;
+    flex-shrink: 0;
 }
