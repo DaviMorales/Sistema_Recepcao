@@ -15,8 +15,26 @@ header {
     min-height: 50px;
 }
 
+/* gambiarra */
+.container {
+    width: 1920px;
+    height: 622px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* mai gambiarra o que está comentado */
+.box {
+    /* margin-top: 150px;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Logo do cabeçalho */
-.box img {
+.header img {
     max-width: 80px;
     max-height: 80px;
     width: auto;

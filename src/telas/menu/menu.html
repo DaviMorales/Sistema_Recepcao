@@ -13,7 +13,7 @@
 <body>
     
     <header>
-        <div class="box">
+        <div class="header">
             <h1><img src="../../../assets/img/logo-gdf-300.png" alt="Logo do GDF"></h1>
 
             <nav>
@@ -23,28 +23,30 @@
     </header>
 
     <main>
-        <div class="box">
-            
-            <form action="">
-                <div>
-                    <h1>CPF, CNPJ, OAB:
-                        <input type="text" name="identificacao" placeholder="Insira aqui o CPF, CNPJ ou OAB" 
-                        pattern="([0-9]{3}[\-]?[0-9]{3}[\-]?[0-9]{3}[\.]?[0-9]{2}) | ([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2}) | ([A-Z]{2}[0-9]{6}) | ([0-9])" required> 
-                    </h1>
-                </div>
-                <div>
-                    <label for="nome">
-                        Nome:
-                        <input type="text" id="nome" name="nome" placeholder="Digite o nome completo" required>
-                    </label>
-                </div>
-                <div>
-                    <label for="motivo">
-                        Motivo:
-                        <textarea name="motivo" id="motivo" cols="30" rows="10" placeholder="Digite o motivo da visita aqui"></textarea>
-                    </label>
-                </div>
-            </form>
+        <div class="container">
+            <div class="box">
+                
+                <form action="">
+                    <div>
+                        <h1>CPF, CNPJ, OAB:
+                            <input type="text" name="identificacao" placeholder="Insira aqui o CPF, CNPJ ou OAB" 
+                            pattern="([0-9]{3}[\-]?[0-9]{3}[\-]?[0-9]{3}[\.]?[0-9]{2}) | ([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2}) | ([A-Z]{2}[0-9]{6}) | ([0-9])" required> 
+                        </h1>
+                    </div>
+                    <div>
+                        <label for="nome">
+                            Nome:
+                            <input type="text" id="nome" name="nome" placeholder="Digite o nome completo" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="motivo">
+                            Motivo:
+                            <textarea name="motivo" id="motivo" cols="30" rows="10" placeholder="Digite o motivo da visita aqui"></textarea>
+                        </label>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 
